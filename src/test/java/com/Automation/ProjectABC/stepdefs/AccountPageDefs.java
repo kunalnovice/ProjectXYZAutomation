@@ -31,7 +31,7 @@ public class AccountPageDefs extends BaseDefs {
 
 
     @Then("^I perform single action$")
-    public void iperformsingleaction()  {
+    public void iperformsingleaction() {
         log.log_def_track("--START Scenario Name = "+ scenarios.getName());
         try {
             accountPage.iperformsingleaction();
