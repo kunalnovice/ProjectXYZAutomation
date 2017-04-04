@@ -2,6 +2,7 @@ package com.Automation.ProjectABC;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import org.junit.runner.JUnitCore;
 import org.junit.runner.RunWith;
 
 /**
@@ -9,6 +10,9 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features = "src/test/resources/Features", glue = "com.Automation.ProjectABC.stepdefs", tags = {"@one"}, format = {"html:target/cucumber-report/Project XYZ","json:target/cucumber.json"})
+@CucumberOptions(features = "src/test/resources/Features", glue = "com.Automation.ProjectABC.stepdefs", tags = {"@one"}, monochrome= true , plugin = {"pretty", "html:target/cucumber-report/Project XYZ","json:target/cucumber.json"})
 public class RunnerTest {
+    //public static void main (String[] args) throws Exception {
+      //  JUnitCore.main("src.test.java.com.Automation.ProjectABC.RunnerTest");
+    //}
 }
