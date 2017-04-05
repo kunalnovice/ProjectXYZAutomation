@@ -10,3 +10,14 @@ Scenario: some scenario desc
   When  when step
   Then  then step
 
+
+  Scenario: building Modules
+    Given I perform multiple action together
+    Then  I perform single action
+
+
+    Scenario: nothing
+      Given then step
+
+  Scenario: nothing new
+    Given when step
